@@ -1,0 +1,164 @@
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f8f9fa;
+  min-height: auto;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 1rem 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.cart-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 1rem;
+}
+
+.cart-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.cart-info h2 {
+  font-size: 1.1rem;
+  margin: 0;
+  color: #333;
+}
+
+.cart-info p {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+.cart-price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.empty-cart {
+  margin-top: 5rem;
+  font-size: 1.3rem;
+  color: #555;
+  font-weight: 500;
+}
+.hatao-btn{
+  padding: 5px;
+  border-radius: 10px;
+  background-color: red;
+  border: none;
+  margin-left: 10px;
+}.cart-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: 1.5rem auto;
+  padding: 1rem 1.5rem;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.total-box {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #007bff;
+}
+
+.reset-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.3rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.reset-btn:hover {
+  background-color: #b02a37;
+}
+
+.hatao-btn {
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.2s ease;
+}
+
+.hatao-btn:hover {
+  background-color: #e68900;
+}
+.place-order-btn {
+  background-color: #ff5722;       /* Bright orange button */
+  color: #fff;                     /* White text */
+  font-size: 1rem;                 /* Medium text size */
+  font-weight: 600;                /* Bold text */
+  padding: 12px 25px;              /* Top-bottom 12px, left-right 25px */
+  border: none;                    /* No border */
+  border-radius: 8px;              /* Rounded corners */
+  cursor: pointer;                 /* Pointer on hover */
+  transition: all 0.3s ease;       /* Smooth hover effect */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* Soft shadow */
+}
+
+.place-order-btn:hover {
+  background-color: #e64a19;       /* Darker shade on hover */
+  transform: translateY(-2px);     /* Slight lift effect */
+  box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+}
+
+.place-order-btn:active {
+  transform: translateY(0);        /* Pressed effect */
+  box-shadow: 0 3px 4px rgba(0,0,0,0.1);
+}
+.quantity-input {
+  width: 60px;                  /* Fixed width */
+  padding: 5px 10px;            /* Inner spacing */
+  font-size: 1rem;              /* Text size */
+  text-align: center;           /* Center the number */
+  border: 1px solid #ccc;       /* Light grey border */
+  border-radius: 6px;           /* Rounded corners */
+  outline: none;                /* Remove default outline */
+  transition: border 0.2s ease;
+}
+
+.quantity-input:focus {
+  border-color: #ff5722;        /* Highlight on focus */
+  box-shadow: 0 0 5px rgba(255,87,34,0.5); /* Soft glow */
+}
+
+.quantity-input::-webkit-inner-spin-button,
+.quantity-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;     /* Remove default arrows on Chrome/Safari */
+  margin: 0;
+}
+
